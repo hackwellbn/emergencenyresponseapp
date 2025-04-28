@@ -1,0 +1,43 @@
+.admins {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .admins h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .admins p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .admins__stations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .station-link {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #4a90e2;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .station-link:hover {
+    background-color: #357ab8;
+  }
+  
+  @media (max-width: 600px) {
+    .station-link {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

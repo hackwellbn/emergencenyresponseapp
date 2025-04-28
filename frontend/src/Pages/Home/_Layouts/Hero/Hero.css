@@ -1,0 +1,36 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    background: linear-gradient(to top, hsla(0, 9%, 4%, 0.3), hsla(0, 27%, 4%, 0.3)), url(../../../../assets/rescue.jpg) no-repeat center center/cover;
+}
+.hero__content{
+    text-align: left;
+    color: #fff;
+}    
+.hero__content h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero__content p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}    
+.hero__button{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background-color: #f0a500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.hero__button:hover{
+    background-color: #fff;
+    color: #f0a500;
+}
