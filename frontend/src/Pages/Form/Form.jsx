@@ -4,7 +4,9 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { FaTrash, FaEdit } from "react-icons/fa";
 
-const baseURL = "http://localhost:5000";
+const baseURL = process.env.NODE_ENV === "production" 
+  ? "https://emtech.onrender.com" 
+  : "http://localhost:5000";
 
 // ViewData component
 const ViewData = ({ formData, setFormData, setIsEditing, refreshKey }) => {
