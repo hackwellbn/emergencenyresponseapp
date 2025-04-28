@@ -151,8 +151,15 @@ const Form = () => {
         setIsEditing(false);
       } else {
         const response = await axios.post(`${baseURL}/api/emergency`, formData);
-        toast.success("Emergency request sent. Help is on the way!");
-        localStorage.setItem("id", response.data.data._id);
+        console.log("Server Response:", response.data);
+
+        const id = response?.data?.data?._id;
+        if (id) {
+          localStorage.setItem("id", id);
+          toast.success("Emergency request sent. Help is on the way!");
+        } else {
+          toast.warn("Emergency submitted, but no ID was saved.");
+        }
       }
 
       setFormData({
