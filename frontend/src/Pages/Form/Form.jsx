@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { FaTrash, FaEdit } from "react-icons/fa";
 
 const baseURL = process.env.NODE_ENV === "production" 
-  ? "https://emtech.onrender.com" 
+  ? "https://emtech-d8sv.onrender.com" 
   : "http://localhost:5000";
 
 // ViewData component
