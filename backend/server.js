@@ -7,13 +7,7 @@ import cors from 'cors';
 dotenv.config();
 
 const corsOptions = {
-  origin: (origin, callback) => {
-    if (!origin || origin.includes('localhost') || origin.includes('onrender.com')) {
-      callback(null, true);
-    } else {
-      callback(new Error('not allowed by cors'));
-    }
-  },
+  origin: ['https://emtech-frontend.com','http://localhost:5000'],
   methods: ['GET', 'POST','PUT', 'DELETE'],
   credentials: true,
 };
